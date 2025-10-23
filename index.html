@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css" />
 
+    <!-- Website Preview Image -->
+    <meta property="og:title" content="Porfolio">
+    <meta property="og:description" content="Full-Stack Developer.">
+    <meta property="og:image" content="https://majdtrabelsi.github.io/portfolio/images/link.png">
+    <meta property="og:url" content="https://majdtrabelsi.github.io/portfolio">
+    <meta property="og:type" content="website">
+
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://majdtrabelsi.github.io/portfolio/images/link.png">
+
+
+    <link rel="icon" type="image/png" href="/path-to-your-favicon.png">
+
+
 </head>
 
 
@@ -14,7 +29,7 @@
 <body>
     <header class="header">
         <a href="#" class="logo" >Porfolio</a>
-        <i class="fas fa-bars"  id="menu-icon"></i> 
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -26,12 +41,11 @@
 
 
     </header>
-
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me </h3>
             <h1>Majd Trabelsi</h1>
-            <h3>And I'm a <span>Full Stack Developer</span></h3>
+            <h3>And I'm a <span class="multiple-text">Full Stack Developer</span></h3>
             <p>
                 I design and develop full-stack applications — from dynamic front-end interfaces to robust back-end systems.
             </p>
@@ -91,7 +105,45 @@
         </div>
     </section>
 
+    <section class="portfolio" id="portfolio">
+            <h2 class="heading">Lastest <span>Project</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images/coffee.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, officia!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
 
+                <div class="portfolio-box">
+                    <img src="images/bd.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, officia!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Majd Trabelsi | All Rights Reserved. </p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    
+
+    <script src="js/script.js"></script>
     
 </body>
 
