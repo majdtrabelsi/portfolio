@@ -26,6 +26,9 @@ html{
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
+
+    
 }
 
 section{
@@ -393,7 +396,7 @@ span {
 
 
 
-@media (max-widht: 991px){
+@media (max-width: 991px){
     .header{
         padding: 2rem 3%;
     }
