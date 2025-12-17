@@ -52,12 +52,19 @@ ScrollReveal().reveal('.home-content p, .about-content ', { origin: 'right' });
 
 
 
-/*const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer'],
-    typeSpeed: 100,
-    backSpeed: 100, 
-    backdDelay: 1000,  
-    loop: true
 
-});*/
 
+/* =========================
+   DARK MODE TOGGLE
+========================= */
+
+const darkToggle = document.getElementById('darkModeToggle');
+
+darkToggle.onclick = () => {
+    document.body.classList.toggle('dark');
+
+    // Change icon
+    darkToggle.innerHTML = document.body.classList.contains('dark')
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
+};
