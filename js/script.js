@@ -52,19 +52,29 @@ ScrollReveal().reveal('.home-content p, .about-content ', { origin: 'right' });
 
 
 
-
-
 /* =========================
-   DARK MODE TOGGLE
+   DARK MODE (SAVED)
 ========================= */
 
 const darkToggle = document.getElementById('darkModeToggle');
 
+// Load saved theme
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+    darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+} else {
+    darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+}
+
+// Toggle + Save
 darkToggle.onclick = () => {
     document.body.classList.toggle('dark');
 
-    // Change icon
-    darkToggle.innerHTML = document.body.classList.contains('dark')
-        ? '<i class="fa-solid fa-sun"></i>'
-        : '<i class="fa-solid fa-moon"></i>';
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else {
+        localStorage.setItem('theme', 'light');
+        darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
 };
