@@ -96,10 +96,29 @@ const translations = {
         home_desc: "I design and develop full-stack applications — from dynamic front-end interfaces to robust back-end systems.",
 
         about_title: "About Me",
+        about_dev: "Full Stack Developer",
         about_desc: "I’m a passionate Full-Stack Developer who loves building modern, efficient, and user-friendly digital experiences.",
 
+        services_title: "Our Services",
+        service_web: "Web Development",
+        service_web_desc: "Responsive and Modern UIs / Scalable and Secure Systems.",
+        service_mobile: "Mobile Application",
+        service_mobile_desc: "Cross-platform apps with Flutter and Android Studio.",
+        service_desktop: "Desktop Application",
+        service_desktop_desc: "Powerful Desktop Applications and integrated Backend Systems.",
+
+        portfolio_title: "Latest Project",
+        project_coffee: "Coffee Shop Website",
+        project_coffee_desc: "A modern coffee shop website that showcases the menu and café atmosphere.",
+        project_company: "Company Website",
+        project_company_desc: "An appointment management website for organizing client meetings.",
+        project_graduation: "Graduation Project",
+        project_graduation_desc: "A freelance platform connecting clients and professionals.",
+
+        read_more: "Read More",
         download_cv: "Download CV",
-        about_dev:"Full Stack Developer"
+
+        copyright: "Copyright © 2025 by Majd Trabelsi | All Rights Reserved."
     },
 
     fr: {
@@ -113,10 +132,29 @@ const translations = {
         home_desc: "Je conçois et développe des applications full stack, des interfaces modernes jusqu’aux systèmes back-end robustes.",
 
         about_title: "À propos de moi",
+        about_dev: "Développeur Full Stack",
         about_desc: "Je suis un développeur Full Stack passionné par la création d’expériences numériques modernes, performantes et intuitives.",
-        about_dev:"Développeur Full Stack",
 
-        download_cv: "Télécharger le CV"
+        services_title: "Mes Services",
+        service_web: "Développement Web",
+        service_web_desc: "Interfaces modernes et responsives / Systèmes sécurisés et évolutifs.",
+        service_mobile: "Application Mobile",
+        service_mobile_desc: "Applications multiplateformes avec Flutter et Android.",
+        service_desktop: "Application Desktop",
+        service_desktop_desc: "Applications de bureau puissantes avec backend intégré.",
+
+        portfolio_title: "Derniers Projets",
+        project_coffee: "Site Web de Café",
+        project_coffee_desc: "Un site moderne présentant le menu et l’ambiance du café.",
+        project_company: "Site Web d’Entreprise",
+        project_company_desc: "Un site de gestion de rendez-vous pour les entreprises.",
+        project_graduation: "Projet de Fin d’Études",
+        project_graduation_desc: "Une plateforme freelance reliant clients et professionnels.",
+
+        read_more: "En savoir plus",
+        download_cv: "Télécharger le CV",
+
+        copyright: "© 2025 Majd Trabelsi | Tous droits réservés."
     }
 };
 
@@ -126,16 +164,6 @@ const langButtons = {
     fr: document.getElementById("lang-fr")
 };
 
-function setLanguage(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-
-    localStorage.setItem("lang", lang);
-}
 
 langButtons.en.addEventListener("click", () => setLanguage("en"));
 langButtons.fr.addEventListener("click", () => setLanguage("fr"));
