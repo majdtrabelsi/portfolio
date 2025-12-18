@@ -217,7 +217,7 @@ function translatePage(lang) {
     setActiveLang(lang);
 }
 
-/* 🔥 THIS WAS MISSING */
+/*  THIS WAS MISSING */
 langButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         const lang = btn.id.split('-')[1];
