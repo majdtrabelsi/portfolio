@@ -293,12 +293,9 @@ span {
 .js { color: #f7df1e; }
 .react { color: #61dafb; }
 .flutter { color: #42a5f5; }
-.django { color: #0c4b33; }
+.django { color: #0b9660; }
 
-/* RTL */
-html[dir="rtl"] .skill-box {
-    text-align: right;
-}
+
 
 /* PORTFOLIO */
 .portfolio {
